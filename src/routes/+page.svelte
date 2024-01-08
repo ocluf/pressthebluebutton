@@ -12,8 +12,7 @@
 		const app = new Application(canvas);
 		await app.load('https://prod.spline.design/m22mMvqC-nem3p3R/scene.splinecode');
 		app.addEventListener('mouseUp', (e) => {
-			console.log(e);
-			fetch('http://localhost:5173/', {
+			fetch(`${window.location.origin}/`, {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
