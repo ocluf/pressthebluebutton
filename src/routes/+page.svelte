@@ -31,12 +31,11 @@
 	:global(body) {
 		margin: 0;
 		padding: 0;
-		overflow: hidden;
 		height: 100vh;
 	}
 
 	canvas {
 		width: 100%;
-		height: 100%;
+		height: 100vh;
 	}
 </style>
