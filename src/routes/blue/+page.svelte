@@ -58,20 +58,28 @@
 			you keep this information secret, especially for those who pressed the red button. If you want
 			to see what screen red button pressors got <a href="/red" class="underline">go here</a>.
 		</p>
-	</div>
-	<div class="mt-10">
-		<h2 class="text-lg font-bold">Total number of presses for the red and blue button</h2>
-		<canvas id="canvas3d" class="mt-5 rounded-xl max-w-[60ch] min-h-[400px]"></canvas>
-	</div>
-	<div class="mt-20">
-		<h2 class="text-lg font-bold">Number of presses per country</h2>
-		{#each data.presses_by_country as presses}
-			<div class="flex space-x-4 mt-10">
-				<h3 class="text-lg w-[100px]">{presses.country}</h3>
-				<p class="text-lg text-red-500">Red presses: {presses.red}</p>
-				<p class="text-lg text-blue-500">Blue presses: {presses.blue}</p>
-			</div>
-		{/each}
+		<div class="mt-10">
+			<h2 class="text-lg font-bold">Total number of presses for the red and blue button</h2>
+			<canvas id="canvas3d" class="mt-5 rounded-xl max-w-[60ch] min-h-[400px]"></canvas>
+		</div>
+		<div class="mt-20">
+			<h2 class="text-lg font-bold">Number of presses per country</h2>
+			{#each data.presses_by_country as presses}
+				<div class="flex space-x-4 mt-10">
+					<h3 class="text-lg w-[100px]">{presses.country}</h3>
+					<p class="text-lg text-red-500">Red presses: {presses.red}</p>
+					<p class="text-lg text-blue-500">Blue presses: {presses.blue}</p>
+				</div>
+			{/each}
+		</div>
+		<h1 class="text-lg font-bold mt-10">
+			How to show you <span class="text-blue-500">blue button allegiance</span>
+		</h1>
+		<p class="mt-10 text-lg">
+			- Start sentences with a B <br />
+			- put a blue emoji in your name like 🦋, 🔵, 🧵 <br />
+			- Make up the wildest stories about what is behind the blue press wall
+		</p>
 	</div>
 	<!-- <div class="mt-20">
 		<h2 class="text-lg font-bold">Number of presses in the past 24 hours</h2>
