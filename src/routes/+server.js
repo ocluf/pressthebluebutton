@@ -1,5 +1,4 @@
 import { press_button } from '$lib/server/db';
-import { redirect } from '@sveltejs/kit';
 
 export const POST = async (e) => {
 	let ip_address = e.getClientAddress();
@@ -26,6 +25,5 @@ export const POST = async (e) => {
 
 	await press_button(body.button_press, ip_address, country, Date.now());
 
-	console.log(JSON.stringify(body.button_press) + ' ' + ip_address);
 	return new Response();
 };
