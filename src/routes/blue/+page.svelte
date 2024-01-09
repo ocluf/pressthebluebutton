@@ -66,7 +66,7 @@
 		<p class="mt-10 text-lg">
 			Now that you pressed the correct button I can show you some fun statistics! <a
 				href="/red"
-				class="underline">go here to see what red button press screen</a
+				class="underline">(go here to see what you got with the red press)</a
 			>.
 		</p>
 		<div class="mt-10">
