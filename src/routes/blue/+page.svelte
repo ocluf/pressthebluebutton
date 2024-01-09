@@ -73,14 +73,15 @@
 			{/each}
 		</div>
 		<h1 class="text-lg font-bold mt-10">
-			How to show you <span class="text-blue-500">blue button allegiance</span>
+			How to show your <span class="text-blue-500">blue button allegiance</span>
 		</h1>
-		<p class="mt-10 text-lg">
+		<p class="mt-10 text-lg pb-20">
 			- Start sentences with a B <br />
 			- put a blue emoji in your name like 🦋, 🔵, 🧵 <br />
 			- Make up the wildest stories about what is behind the blue press wall
 		</p>
 	</div>
+
 	<!-- <div class="mt-20">
 		<h2 class="text-lg font-bold">Number of presses in the past 24 hours</h2>
 	</div> -->
