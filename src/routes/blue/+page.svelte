@@ -54,9 +54,10 @@
 		</h1>
 
 		<p class="mt-10 text-lg">
-			Since you pressed the blue button I can show you some fun statistics! My only request is that
-			you keep this information secret, especially for those who pressed the red button. If you want
-			to see what screen red button pressors got <a href="/red" class="underline">go here</a>.
+			Now that you pressed the correct button I can show you some fun statistics! <a
+				href="/red"
+				class="underline">go here</a
+			>.
 		</p>
 		<div class="mt-10">
 			<h2 class="text-lg font-bold">Total number of presses for the red and blue button</h2>

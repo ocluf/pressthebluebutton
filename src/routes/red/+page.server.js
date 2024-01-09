@@ -1,4 +1,5 @@
-import { get_button_press_for_ip } from '$lib/server/db';
+import { getButtonPressesByCountry, get_button_press_for_ip } from '$lib/server/db';
+import { aggregatePressCounts } from '$lib/util.js';
 import { redirect } from '@sveltejs/kit';
 
 export const load = async (e) => {
@@ -6,4 +7,12 @@ export const load = async (e) => {
 	if (button_press.rows.length === 0) {
 		redirect(301, '/');
 	}
+	if (button_press.rows.length > 0 && button_press.rows[0].button_press == 'blue') {
+		redirect(301, '/blue');
+	}
+	// get stats
+	let presses = await getButtonPressesByCountry();
+	const aggregation = aggregatePressCounts(presses);
+
+	return { presses_by_country: aggregation };
 };
