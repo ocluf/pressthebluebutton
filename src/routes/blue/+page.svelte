@@ -1,7 +1,6 @@
 <script>
 	import { browser } from '$app/environment';
 	import { Application } from '@splinetool/runtime';
-	import { json } from '@sveltejs/kit';
 	import { tick } from 'svelte';
 
 	let { data } = $props();
@@ -67,7 +66,7 @@
 		<p class="mt-10 text-lg">
 			Now that you pressed the correct button I can show you some fun statistics! <a
 				href="/red"
-				class="underline">go here</a
+				class="underline">go here to see what red button press screen</a
 			>.
 		</p>
 		<div class="mt-10">
