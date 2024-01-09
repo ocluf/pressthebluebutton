@@ -1,12 +1,25 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		<title>Please don't press the red button</title>
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://pressthebluebutton.fun" />
+		<meta property="og:title" content="Press the blue button" />
+		<meta property="og:description" content="Please don't press the red button instead" />
+		<meta property="og:image" content="%sveltekit.assets%/buttons.webp" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="%sveltekit.assets%/buttons.webp" />
+		<meta property="twitter:url" content="https://pressthebluebutton.fun" />
+		<meta property="twitter:title" content="Please press the blue button" />
+		<meta property="twitter:description" content="Don't press the red button instead" />
+		<meta property="twitter:image" content="%sveltekit.assets%/buttons.webp" />
 	</head>
-	<body data-sveltekit-preload-data="hover">
+	<body data-sveltekit-preload-data="hover" class="bg-gray-900">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
