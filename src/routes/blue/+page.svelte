@@ -22,6 +22,17 @@
 		return { totalBlue, totalRed };
 	}
 
+	function sortByHighestAggregatedPressCount(arr) {
+		return arr.sort((a, b) => {
+			// Calculate the total press count for each object
+			const totalPressCountA = a.blue + a.red;
+			const totalPressCountB = b.blue + b.red;
+
+			// Sort in descending order
+			return totalPressCountB - totalPressCountA;
+		});
+	}
+
 	async function setup_spline() {
 		await tick();
 		const canvas = document.getElementById('canvas3d');
@@ -65,11 +76,11 @@
 		</div>
 		<div class="mt-20">
 			<h2 class="text-lg font-bold">Number of presses per country</h2>
-			{#each data.presses_by_country as presses}
-				<div class="flex space-x-4 mt-10">
+			{#each sortByHighestAggregatedPressCount(data.presses_by_country) as presses}
+				<div class="flex space-x-8 mt-10">
 					<h3 class="text-lg w-[100px]">{presses.country}</h3>
-					<p class="text-lg text-red-500">Red presses: {presses.red}</p>
-					<p class="text-lg text-blue-500">Blue presses: {presses.blue}</p>
+					<p class="text-lg font-bold text-red-500">{presses.red}</p>
+					<p class="text-lg font-bold text-blue-500">{presses.blue}</p>
 				</div>
 			{/each}
 		</div>
